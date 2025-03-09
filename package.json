@@ -9,9 +9,6 @@
     "test": "ng test"
   },
   "private": true,
-  "overrides": {
-    "@tailwindcss/oxide": "linux-x64-gnu"
-  },
   "optionalDependencies": {
     "@tailwindcss/oxide-win32-x64-msvc": "4.0.12"
   },
@@ -28,7 +25,6 @@
     "postcss": "^8.5.3",
     "rxjs": "~7.8.0",
     "tailwindcss": "^4.0.12",
-    "@tailwindcss/oxide-linux-x64-gnu": "4.0.12",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
