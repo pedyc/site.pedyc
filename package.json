@@ -9,11 +9,11 @@
     "test": "ng test"
   },
   "private": true,
-  "resolutions": {
+  "overrides": {
     "@tailwindcss/oxide": "linux-x64-gnu"
   },
   "optionalDependencies": {
-    "@tailwindcss/oxide-win32-x64-msvc": "4.0.12" 
+    "@tailwindcss/oxide-win32-x64-msvc": "4.0.12"
   },
   "dependencies": {
     "@angular/animations": "^19.1.0",
