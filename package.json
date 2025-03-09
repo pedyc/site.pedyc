@@ -10,10 +10,7 @@
   },
   "private": true,
   "resolutions": {
-    "rollup": "npm:@rollup/wasm-node"
-  },
-  "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.27.3"
+    "@tailwindcss/oxide": "linux-x64-gnu"
   },
   "dependencies": {
     "@angular/animations": "^19.1.0",
