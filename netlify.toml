@@ -1,5 +1,5 @@
 [build]
-  command = "rm -rf node_modules && npm install --force && ng build --prod" 
+  command = "rm -rf node_modules && npm install --force && ng build" 
   publish = "dist/site.pedyc/browser" # 替换为实际输出路径
 
 [build.environment]
