@@ -1,8 +1,4 @@
 [build]
-  command = "rm -rf node_modules && npm install --platform=linux --arch=x64 --force && ng build" 
-  publish = "dist/site.pedyc/browser" # 替换为实际输出路径
+  command = "ng build" 
+  publish = "dist/site.pedyc/browser"
 
-[build.environment]
-npm_config_platform = "linux"  # 关键！通过 npm 专用环境变量指定平台
-NPM_CONFIG_PLATFORM = "linux"
-NPM_CONFIG_ARCH = "x64"
