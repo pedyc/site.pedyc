@@ -1,0 +1,13 @@
+<div class="card-link">
+    <div class="card-link__content">
+        <ng-content select="[card-link__content]"></ng-content>
+        <a [href]="link" class="card-link__link" (mouseenter)="$event.preventDefault()" [attr.title]="null">{{title || link}}</a>
+        <div class="card-link__popover" *ngIf="showPopover">
+            <div class="card-link__popover-content">
+                <div class="card-link__content__desc">
+                    <ng-content></ng-content>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
