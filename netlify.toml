@@ -1,0 +1,7 @@
+[build]
+  command = "npm install --platform=linux && ng build"
+  publish = "dist/site.pedyc/browser" # 替换为实际输出路径
+
+[build.environment]
+  NODE_VERSION = "18.x" # 指定Node版本
+  NODE_OPTIONS = "--platform=linux" # 强制Linux平台
