@@ -1,6 +1,6 @@
 # 添加缓存配置提升构建速度
 [build]
-  command = "npm install -g @angular/cli && npm install --legacy-peer-deps --force && ng build --configuration=production"
+  command = "npm install -g @angular/cli && npm install --legacy-peer-deps --force && npm install typescript@5.5.3 && ng build --configuration=production"
   publish = "dist/site.pedyc/browser"
 
 # 新增缓存策略（与Dockerfile环境对齐）
