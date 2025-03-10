@@ -1,4 +1,22 @@
+# 添加缓存配置提升构建速度
 [build]
-  command = "npm install && ng build" 
+  command = "npm install --legacy-peer-deps --force && npm run build -- --configuration=production"
   publish = "dist/site.pedyc/browser"
+
+# 新增缓存策略（与Dockerfile环境对齐）
+[context.production.environment]
+  NODE_VERSION = "18.20.0"  # 保持与Dockerfile的node:18-alpine版本一致
+  NODE_ENV = "production"
+  CI = "true"
+
+[build.environment]
+  NG_CLI_ANALYTICS = "false"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.processing]
+  skip_processing = true
 
