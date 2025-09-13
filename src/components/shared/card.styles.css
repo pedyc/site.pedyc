@@ -9,6 +9,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 0.5rem;
   overflow: hidden;
+  animation: cardFadeIn 1s ease-out forwards;
 }
 
 /* 卡片悬停效果 */
@@ -72,10 +73,6 @@
 
 /* 卡片动画 */
 @keyframes cardFadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0.5; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-.card-animation {
-  animation: cardFadeIn 0.5s ease-out;
 }
